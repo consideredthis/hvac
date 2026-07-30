@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const DETAILS = [
   { icon: Phone, label: "Phone", value: "403 287 2398", href: "tel:+14032872398" },
-  { icon: Mail, label: "Email", value: "quotes@precisionhermetic.com", href: "mailto:quotes@precisionhermetic.com" },
+  { icon: Mail, label: "Email", value: "precisionhermetic@telus.net", href: "mailto:precisionhermetic@telus.net" },
   { icon: MapPin, label: "Facility", value: "Bay #4, 4451 64 Avenue SE, Calgary, Alberta T2C 2C8" },
   { icon: Clock, label: "Hours", value: "Mon–Fri, 8:00 AM – 4:30 PM MST" },
 ]
@@ -14,10 +14,29 @@ const DETAILS = [
 export function ContactSection() {
   const [submitted, setSubmitted] = useState(false)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault()
-    setSubmitted(true)
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault()
+
+  const form = e.currentTarget
+  const formData = new FormData(form)
+  const payload = Object.fromEntries(formData.entries())
+
+  const response = await fetch("/api/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  })
+
+  if (!response.ok) {
+    alert("The quote request could not be sent. Please call the shop.")
+    return
   }
+
+  form.reset()
+  setSubmitted(true)
+}
 
   return (
     <section id="contact" className="bg-background py-16 md:py-24">
@@ -71,6 +90,13 @@ export function ContactSection() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-5">
+              <input
+  type="text"
+  name="website"
+  tabIndex={-1}
+  autoComplete="off"
+  className="hidden"
+/>
               <div className="grid gap-5 sm:grid-cols-2">
                 <Field id="name" label="Name" required />
                 <Field id="company" label="Company" />
