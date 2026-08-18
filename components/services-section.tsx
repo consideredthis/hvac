@@ -9,12 +9,12 @@ const SERVICES = [
   {
     icon: Zap,
     title: "Motor Rewinding",
-    body: "In-house stator rewinding with new magnet wire, dip-and-bake insulation, and full electrical testing on electric-drive units.",
+    body: "In-house stator rewinding with new magnetic wire, coils rewound and finished with an industry-standard insulation epoxy varnish, plus full electrical testing on electric-drive units.",
   },
   {
     icon: Cog,
     title: "Precision Machining",
-    body: "Crankshaft grinding, cylinder boring, and bearing surface resurfacing on calibrated shop equipment.",
+    body: "Crankshaft polishing and cylinder honing using calibrated shop equipment.",
   },
   {
     icon: Snowflake,
@@ -24,7 +24,7 @@ const SERVICES = [
   {
     icon: Gauge,
     title: "Run Testing",
-    body: "Every compressor is charged, run under load, and verified for pressure, amperage, and oil integrity.",
+    body: "Every compressor is charged with oil, run under load, and verified for pressures, amperage, and oil integrity.",
   },
   {
     icon: ClipboardCheck,
@@ -45,7 +45,7 @@ export function ServicesSection() {
             End-to-end compressor services
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            From a single failed unit to full-fleet remanufacturing programs, we handle every step in
+            From a single failed unit to fleet-wide remanufacturing programs, we handle every step in
             one facility — no outsourcing, no guesswork.
           </p>
         </div>

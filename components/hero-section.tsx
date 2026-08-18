@@ -1,6 +1,6 @@
 import { ArrowRight, ShieldCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { HeroCompressorAnimation } from "@/components/compressor-animation"
+import { PhotoPlaceholder } from "@/components/photo-placeholder"
 
 const STATS = [
   { value: "Est. 1991", label: "Family-run in Calgary" },
@@ -47,7 +47,7 @@ export function HeroSection() {
         <div className="relative">
           <div className="absolute -inset-4 -z-0 rounded-sm bg-primary/10 blur-2xl" aria-hidden="true" />
           <div className="relative overflow-hidden rounded-sm border border-steel-muted/20 bg-steel/40 p-2 shadow-2xl">
-            <HeroCompressorAnimation />
+            <PhotoPlaceholder tone="dark" label="Compressor photo" className="rounded-sm" />
           </div>
         </div>
       </div>
