@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server"
-import { Resend } from "resend"
+import nodemailer from "nodemailer"
 
 export async function POST(request: Request) {
   try {
@@ -27,26 +27,45 @@ export async function POST(request: Request) {
       )
     }
 
-    if (!process.env.RESEND_API_KEY) {
+    const {
+      SMTP_HOST,
+      SMTP_PORT,
+      SMTP_USER,
+      SMTP_PASS,
+      CONTACT_RECIPIENT_EMAIL,
+      CONTACT_FROM_EMAIL,
+    } = process.env
+
+    if (
+      !SMTP_HOST ||
+      !SMTP_PORT ||
+      !SMTP_USER ||
+      !SMTP_PASS ||
+      !CONTACT_RECIPIENT_EMAIL ||
+      !CONTACT_FROM_EMAIL
+    ) {
+      console.error("Missing SMTP environment variables")
+
       return NextResponse.json(
         { error: "Email service is not configured." },
         { status: 500 },
       )
     }
 
-    const resend = new Resend(process.env.RESEND_API_KEY)
+    const transporter = nodemailer.createTransport({
+      host: SMTP_HOST,
+      port: Number(SMTP_PORT),
+      secure: false,
+      requireTLS: true,
+      auth: {
+        user: SMTP_USER,
+        pass: SMTP_PASS,
+      },
+    })
 
-    const recipient =
-      process.env.CONTACT_RECIPIENT_EMAIL ||
-      "precisionhermetic@telus.net"
-
-    const from =
-      process.env.CONTACT_FROM_EMAIL ||
-      "Precision Hermetic Website <quotes@forms.precisionhermetic.ca>"
-
-    const { error } = await resend.emails.send({
-      from,
-      to: [recipient],
+    await transporter.sendMail({
+      from: CONTACT_FROM_EMAIL,
+      to: CONTACT_RECIPIENT_EMAIL,
       replyTo: email,
       subject: `Quote request: ${model} — ${company || name}`,
       text: `
@@ -63,18 +82,9 @@ ${details || "Not provided"}
       `.trim(),
     })
 
-    if (error) {
-      console.error(error)
-
-      return NextResponse.json(
-        { error: "The quote request could not be sent." },
-        { status: 500 },
-      )
-    }
-
     return NextResponse.json({ success: true })
   } catch (error) {
-    console.error(error)
+    console.error("Contact form error:", error)
 
     return NextResponse.json(
       { error: "The quote request could not be sent." },
