@@ -24,7 +24,7 @@ const SERVICES = [
   {
     icon: Gauge,
     title: "Run Testing",
-    body: "Every compressor is charged with oil — not refrigerant — then run under load and verified for pressures, amperage, and oil integrity.",
+    body: "Every compressor is charged with oil, run under load, and verified for pressures, amperage, and oil integrity.",
   },
   {
     icon: ClipboardCheck,

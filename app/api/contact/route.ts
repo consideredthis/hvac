@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 
     const recipient =
       process.env.CONTACT_RECIPIENT_EMAIL ||
-      "precisionhermetic@telus.net"
+      "quotes@precisionhermetic.ca"
 
     const from =
       process.env.CONTACT_FROM_EMAIL ||

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 const DETAILS = [
   { icon: Phone, label: "Phone", value: "403 287 2398", href: "tel:+14032872398" },
-  { icon: Mail, label: "Email", value: "precisionhermetic@telus.net", href: "mailto:precisionhermetic@telus.net" },
+  { icon: Mail, label: "Email", value: "quotes@precisionhermetic.ca", href: "mailto:quotes@precisionhermetic.ca" },
   { icon: MapPin, label: "Facility", value: "Bay #4, 4451 64 Avenue SE, Calgary, Alberta T2C 2C8" },
   { icon: Clock, label: "Hours", value: "Mon–Fri, 8:00 AM – 4:30 PM MST" },
 ]
