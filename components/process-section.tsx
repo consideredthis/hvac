@@ -1,4 +1,4 @@
-import { StageAnimation } from "@/components/compressor-animation"
+import { PhotoPlaceholder } from "@/components/photo-placeholder"
 
 const STAGES = [
   {
@@ -14,17 +14,17 @@ const STAGES = [
   {
     step: "03",
     title: "Machining & Cleaning",
-    body: "Crankshafts are ground, cylinders are bored, and bearing surfaces are resurfaced. Every component is chemically cleaned and inspected to a like-new standard.",
+    body: "Crankshafts are polished and cylinders are honed. Bearings are not resurfaced — they don't need to be, as the crankshaft work is matched to suit them. Every component is chemically cleaned and inspected to a like-new standard.",
   },
   {
     step: "04",
     title: "Rewind & Reassembly",
-    body: "Electric motors are rewound with new magnet wire and re-insulated. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
+    body: "Electric motors are rewound with new magnetic wire, then finished with an industry-standard insulation epoxy varnish. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
   },
   {
     step: "05",
     title: "Run Test & Certification",
-    body: "The finished unit is charged, run under load, and verified for pressure, amp draw, and oil integrity. It ships painted, tagged, and backed by our warranty.",
+    body: "The finished unit is charged with oil, tested under load, and verified for pressures. Before dispatch it is evacuated and charged with dry nitrogen. It ships painted, tagged, and backed by our warranty.",
   },
 ]
 
@@ -54,7 +54,7 @@ export function ProcessSection() {
             >
               <div className={i % 2 === 1 ? "md:order-2" : ""}>
                 <div className="relative overflow-hidden rounded-sm border border-border bg-card shadow-sm">
-                  <StageAnimation stage={i + 1} />
+                  <PhotoPlaceholder label={`${stage.title} photo`} />
                   <span className="absolute left-4 top-4 rounded-sm bg-steel px-2.5 py-1 font-mono text-xs uppercase tracking-widest text-steel-foreground">
                     Stage {stage.step}
                   </span>

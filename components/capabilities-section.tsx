@@ -3,11 +3,12 @@ import { Check } from "lucide-react"
 const BRANDS = [
   "Copeland",
   "Bitzer",
-  "Carlyle",
+  "Carrier / Carlyle",
   "Trane",
   "Vilter",
   "Thermo King",
-  "Carrier",
+  "York",
+  "Dorin",
 ]
 
 const SPECS = [
