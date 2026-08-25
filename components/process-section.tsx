@@ -16,7 +16,7 @@ const STAGES = [
   {
     step: "03",
     title: "Machining & Cleaning",
-    body: "The entire compressor core is cleaned of rust, debris, and oil. Crankshafts are polished and cylinders are honed. Every component is chemically cleaned, inspected to engineer standards, and replaced if needed.",
+    body: "The entire compressor core is cleaned of rust, debris, and oil. Crankshafts are polished and cylinders are honed. Every component is chemically cleaned, inspected to engineering standards, and replaced if needed.",
   },
   {
     step: "04",
