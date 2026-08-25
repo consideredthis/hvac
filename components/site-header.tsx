@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { Menu, X, Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -18,18 +19,15 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/90 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 md:px-6">
-        <a href="#top" className="flex items-center gap-2.5" aria-label="Precision Hermetic Rebuilders home">
-          <span className="flex size-8 items-center justify-center rounded-sm bg-primary text-primary-foreground">
-            <span className="font-heading text-lg font-bold leading-none">P</span>
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-heading text-sm font-bold uppercase tracking-wider text-foreground">
-              Precision Hermetic
-            </span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Rebuilders
-            </span>
-          </span>
+        <a href="#top" className="relative block h-12 w-56 shrink-0" aria-label="Precision Hermetic Rebuilders home">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modern_logo_precision_hermetic_rebuilders-nqTNTdrmIe59BwA547ir1hlNeCxRf5.png"
+            alt="Precision Hermetic Rebuilders"
+            fill
+            sizes="224px"
+            quality={72}
+            className="object-contain object-left"
+          />
         </a>
 
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
