@@ -5,11 +5,13 @@ const STAGES = [
     step: "01",
     title: "Intake & Inspection",
     body: "Each incoming core is logged and inspected. We document the failure mode and confirm the unit is a viable rebuild candidate before any work begins — so you never pay to rebuild a compressor that should be replaced.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20intake%20and%20inspection.JPG-nqe412TZTiZXYox8NdRWF1vlvLRgxg.jpeg",
   },
   {
     step: "02",
     title: "Teardown & Evaluation",
     body: "The compressor is fully disassembled down to individual components. Every part is measured against OEM tolerances and sorted for cleaning, machining, or replacement.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20teardown%20and%20evaluation.JPG-OmVsbRK1vnkCDViRUoyDxSmA6IHNXQ.jpeg",
   },
   {
     step: "03",
@@ -20,6 +22,7 @@ const STAGES = [
     step: "04",
     title: "Rewind & Reassembly",
     body: "Electric motors are rewound with new magnetic wire, then finished with an industry-standard insulation epoxy varnish. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20rewind%20and%20reassembly.JPG-bBJfl6b0iPRRC5ZOivhj1IjoqNiFX6.jpeg",
   },
   {
     step: "05",
@@ -54,7 +57,15 @@ export function ProcessSection() {
             >
               <div className={i % 2 === 1 ? "md:order-2" : ""}>
                 <div className="relative overflow-hidden rounded-sm border border-border bg-card shadow-sm">
-                  <PhotoPlaceholder label={`${stage.title} photo`} />
+                  {stage.image ? (
+                    <img
+                      src={stage.image}
+                      alt={`${stage.title} at the compressor remanufacturing facility`}
+                      className="aspect-[4/3] w-full object-cover object-center"
+                    />
+                  ) : (
+                    <PhotoPlaceholder label={`${stage.title} photo`} />
+                  )}
                   <span className="absolute left-4 top-4 rounded-sm bg-steel px-2.5 py-1 font-mono text-xs uppercase tracking-widest text-steel-foreground">
                     Stage {stage.step}
                   </span>
