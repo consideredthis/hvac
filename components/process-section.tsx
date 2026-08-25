@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 import { PhotoPlaceholder } from "@/components/photo-placeholder"
 
 const STAGES = [
@@ -60,12 +62,15 @@ export function ProcessSection() {
               }
             >
               <div className="grid md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
-                <div className={i % 2 === 1 ? "md:order-2" : ""}>
+                <div className={i % 2 === 1 ? "relative aspect-[4/3] md:aspect-auto md:min-h-full md:order-2" : "relative aspect-[4/3] md:aspect-auto md:min-h-full"}>
                   {stage.image ? (
-                    <img
+                    <Image
                       src={stage.image}
                       alt={`${stage.title} at the compressor remanufacturing facility`}
-                      className="aspect-[4/3] h-full w-full object-cover object-center"
+                      fill
+                      sizes="(max-width: 767px) 100vw, 52vw"
+                      quality={72}
+                      className="object-cover object-center"
                     />
                   ) : (
                     <PhotoPlaceholder label={`${stage.title} photo`} />
