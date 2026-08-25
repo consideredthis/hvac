@@ -16,7 +16,7 @@ const STAGES = [
   {
     step: "03",
     title: "Machining & Cleaning",
-    body: "Crankshafts are polished and cylinders are honed. Bearings are not resurfaced — they don't need to be, as the crankshaft work is matched to suit them. Every component is chemically cleaned and inspected to a like-new standard.",
+    body: "The entire compressor core is cleaned of rust, debris, and oil. Crankshafts are polished and cylinders are honed. Every component is chemically cleaned, inspected to engineer standards, and replaced if needed.",
   },
   {
     step: "04",
