@@ -51,36 +51,50 @@ export function ProcessSection() {
 
         <div className="mt-14 flex flex-col gap-14 md:gap-20">
           {STAGES.map((stage, i) => (
-            <div
+            <article
               key={stage.step}
-              className="grid items-center gap-8 md:grid-cols-2 md:gap-12"
+              className={
+                i % 2 === 1
+                  ? "overflow-hidden rounded-sm border border-border bg-card shadow-sm md:ml-auto md:max-w-5xl"
+                  : "overflow-hidden rounded-sm border border-border bg-card shadow-sm md:max-w-5xl"
+              }
             >
-              <div className={i % 2 === 1 ? "md:order-2" : ""}>
-                <div className="relative overflow-hidden rounded-sm border border-border bg-card shadow-sm">
+              <div className="grid md:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
+                <div className={i % 2 === 1 ? "md:order-2" : ""}>
                   {stage.image ? (
                     <img
                       src={stage.image}
                       alt={`${stage.title} at the compressor remanufacturing facility`}
-                      className="aspect-[4/3] w-full object-cover object-center"
+                      className="aspect-[4/3] h-full w-full object-cover object-center"
                     />
                   ) : (
                     <PhotoPlaceholder label={`${stage.title} photo`} />
                   )}
-                  <span className="absolute left-4 top-4 rounded-sm bg-steel px-2.5 py-1 font-mono text-xs uppercase tracking-widest text-steel-foreground">
-                    Stage {stage.step}
-                  </span>
+                </div>
+                <div
+                  className={
+                    i % 2 === 1
+                      ? "flex flex-col justify-center p-6 md:order-1 md:p-10"
+                      : "flex flex-col justify-center p-6 md:p-10"
+                  }
+                >
+                  <div className="flex items-center gap-4 border-b border-border pb-4">
+                    <span className="font-heading text-5xl font-bold leading-none text-primary">
+                      {stage.step}
+                    </span>
+                    <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                      Stage {stage.step}
+                    </span>
+                  </div>
+                  <h3 className="mt-6 text-balance font-heading text-2xl font-bold uppercase tracking-tight text-foreground md:text-3xl">
+                    {stage.title}
+                  </h3>
+                  <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+                    {stage.body}
+                  </p>
                 </div>
               </div>
-              <div className={i % 2 === 1 ? "md:order-1" : ""}>
-                <span className="font-heading text-5xl font-bold text-primary/25">{stage.step}</span>
-                <h3 className="mt-2 font-heading text-2xl font-bold uppercase tracking-tight text-foreground md:text-3xl">
-                  {stage.title}
-                </h3>
-                <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-                  {stage.body}
-                </p>
-              </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
