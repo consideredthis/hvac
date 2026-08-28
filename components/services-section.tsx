@@ -18,8 +18,8 @@ const SERVICES = [
   },
   {
     icon: Snowflake,
-    title: "Reefer & Walk-In Cooling",
-    body: "Specialists in compressors for transport reefer units and commercial walk-in coolers and freezers across the fleet.",
+    title: "Commercial & Industrial Applications",
+    body: "From commercial refrigeration and building HVAC to transit, institutional and specialty cooling systems, we rebuild compressors across a wide range of demanding applications.",
   },
   {
     icon: Gauge,

@@ -23,7 +23,7 @@ const STAGES = [
   {
     step: "04",
     title: "Rewind & Reassembly",
-    body: "Electric motors are rewound with new magnetic wire, then finished with an industry-standard insulation epoxy varnish. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
+    body: "If required, electric motors are rewound with new magnetic wire and finished with industry-standard insulation epoxy varnish. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20rewind%20and%20reassembly.JPG-bBJfl6b0iPRRC5ZOivhj1IjoqNiFX6.jpeg",
   },
   {
@@ -42,7 +42,7 @@ export function ProcessSection() {
             The rebuild process
           </span>
           <h2 className="mt-3 text-balance font-heading text-3xl font-bold uppercase tracking-tight text-foreground md:text-4xl">
-            Five stages from failed core to certified unit
+            Five stages from failed core to tested unit
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
             Every semi-hermetic compressor moves through the same disciplined remanufacturing line —
