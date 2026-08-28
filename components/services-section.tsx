@@ -9,12 +9,12 @@ const SERVICES = [
   {
     icon: Zap,
     title: "Motor Rewinding",
-    body: "In-house stator rewinding with new magnet wire, insulation varnish and full electrical testing.",
+    body: "Stators requiring rewinding are sent to a trusted specialist for complete rewinding and electrical testing before compressor reassembly.",
   },
   {
     icon: Cog,
     title: "Precision Machining",
-    body: "Crankshaft polishing, cylinder honing and component restoration using calibrated shop equipment.",
+    body: "Crankshaft polishing, cylinder honing and component restoration to bring critical surfaces back within serviceable tolerances.",
   },
   {
     icon: Snowflake,

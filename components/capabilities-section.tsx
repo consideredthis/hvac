@@ -76,7 +76,7 @@ export function CapabilitiesSection() {
             </div>
             <p className="mt-6 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
               {
-                "Don't see your unit? We rebuild almost any semi-hermetic compressor. Send us the model number and we'll confirm within one business day."
+                "Don’t see your compressor listed? We rebuild a wide range of commercial and industrial reciprocating compressors. Send us the model number or nameplate information and we’ll take a look."
               }
             </p>
           </div>
