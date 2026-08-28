@@ -3,13 +3,13 @@ import { Award, Recycle, Clock, DollarSign } from "lucide-react"
 const REASONS = [
   {
     icon: Award,
-    title: "Calgary shop since 1991",
-    body: "Family-run and focused on commercial and industrial compressor rebuilding from our Calgary facility.",
+    title: "4,000+",
+    body: "Compressors rebuilt for commercial and industrial applications.",
   },
   {
     icon: DollarSign,
-    title: "In-house workmanship",
-    body: "Teardown, machining and motor rewinding stay under one roof for consistent hands-on control.",
+    title: "In-House Workmanship",
+    body: "Teardown, machining, reassembly and run-testing are handled in-house, with rewinding completed by trusted specialists.",
   },
   {
     icon: Clock,
