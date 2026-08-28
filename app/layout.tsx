@@ -15,9 +15,9 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Precision Hermetic Rebuilders | Commercial & Industrial Compressor Remanufacturing',
+  title: 'Compressor Rebuilding & Remanufacturing Calgary | Precision Hermetic',
   description:
-    'Precision Hermetic Rebuilders remanufactures commercial and industrial reciprocating compressors in Calgary, Alberta. Full teardown, machining, motor rewinding, reassembly, and run-testing.',
+    'Commercial and industrial compressor rebuilding in Calgary. Precision Hermetic remanufactures Copeland Discus, Carlyle 05G/06E, Bitzer, York, Trane, Vilter and more.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -49,6 +49,32 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} bg-background`}
     >
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Precision Hermetic Rebuilders Inc.",
+              url: "https://precisionhermetic.ca",
+              telephone: "+1-403-287-2398",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Bay #4, 4451 64 Avenue SE",
+                addressLocality: "Calgary",
+                addressRegion: "AB",
+                postalCode: "T2C 2C8",
+                addressCountry: "CA",
+              },
+              openingHoursSpecification: [{
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                opens: "08:00",
+                closes: "16:30",
+              }],
+            }),
+          }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

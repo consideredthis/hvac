@@ -3,23 +3,23 @@ import { Award, Recycle, Clock, DollarSign } from "lucide-react"
 const REASONS = [
   {
     icon: Award,
-    title: "Rebuilt to OEM spec",
-    body: "Every tolerance is verified against manufacturer specifications — not just 'good enough' to run.",
+    title: "Calgary shop since 1991",
+    body: "Family-run and focused on commercial and industrial compressor rebuilding from our Calgary facility.",
   },
   {
     icon: DollarSign,
-    title: "40–60% less than new",
-    body: "Remanufacturing delivers new-unit reliability at a fraction of the replacement cost.",
+    title: "In-House Workmanship",
+    body: "Teardown, machining, reassembly and run-testing are handled in-house, with rewinding completed by trusted specialists.",
   },
   {
     icon: Clock,
-    title: "Honest turnaround",
-    body: "Most units take under a week of actual bench time. We give realistic timelines up front, and rush service is available case-by-case when you're in a bind.",
+    title: "Experienced with difficult equipment",
+    body: "We work with obsolete, uncommon and difficult-to-source compressor equipment across demanding applications.",
   },
   {
     icon: Recycle,
-    title: "Sustainable by design",
-    body: "Reusing a proven casting keeps hundreds of pounds of metal out of the landfill per unit.",
+    title: "12-month warranty",
+    body: "Every finished compressor is tested, tagged and backed by our standard 12-month warranty.",
   },
 ]
 

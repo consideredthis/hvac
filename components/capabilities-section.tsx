@@ -13,7 +13,7 @@ const BRANDS = [
 
 const SPECS = [
   { label: "Compressor types", value: "Semi-hermetic & open-drive reciprocating compressors" },
-  { label: "Applications", value: "Commercial refrigeration · Building HVAC · Transit & transportation · Institutional & industrial cooling · Supermarkets & refrigeration racks" },
+  { label: "Applications", value: "Commercial refrigeration · Building HVAC · Transit & transportation · Institutional & industrial cooling" },
   { label: "Horsepower range", value: "1 HP – 60 HP" },
   { label: "Voltage", value: "115V – 575V, single & 3-phase" },
   { label: "Typical turnaround", value: "15–25 business days (current backlog)" },
@@ -66,9 +66,17 @@ export function CapabilitiesSection() {
                 </li>
               ))}
             </ul>
+            <div className="mt-6 border-t border-border pt-6">
+              <p className="font-mono text-xs uppercase tracking-wider text-primary">
+                Common compressors we rebuild
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Copeland Discus · Carlyle 05G · Carlyle 06D · Carlyle 06E · Bitzer · York · Trane · Vilter · Dorin
+              </p>
+            </div>
             <p className="mt-6 border-t border-border pt-6 text-sm leading-relaxed text-muted-foreground">
               {
-                "Don't see your unit? We rebuild almost any semi-hermetic compressor. Send us the model number and we'll confirm within one business day."
+                "Don’t see your compressor listed? We rebuild a wide range of commercial and industrial reciprocating compressors. Send us the model number or nameplate information and we’ll take a look."
               }
             </p>
           </div>

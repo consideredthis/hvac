@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const STATS = [
   { value: "Est. 1991", label: "Family-run in Calgary" },
-  { value: "4K+", label: "Compressors remanufactured" },
+  { value: "4,000+", label: "Compressors rebuilt" },
   { value: "12 mo", label: "Standard warranty" },
   { value: "100%", label: "Run-tested" },
 ]
@@ -16,17 +16,20 @@ export function HeroSection() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-sm border border-primary/40 bg-primary/10 px-3 py-1 font-mono text-xs uppercase tracking-widest text-primary">
             <ShieldCheck className="size-3.5" aria-hidden="true" />
-            Compressor Remanufacturing · Calgary, AB
+            COMPRESSOR REMANUFACTURING · CALGARY, AB
           </span>
           <h1 className="mt-6 text-balance font-heading text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            Semi-Hermetic Compressors, Rebuilt to Outlast the Original
+            Commercial & Industrial Compressor Rebuilding
           </h1>
+          <p className="mt-4 font-mono text-sm uppercase tracking-[0.16em] text-primary">
+            Remanufactured from the core up in Calgary since 1991.
+          </p>
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-steel-muted">
             Precision Hermetic Rebuilders Inc. remanufactures commercial and industrial reciprocating
             compressors from the core up. From Carlyle 05G and 06E units to Copeland Discus, York,
-            Bitzer and other heavy-duty compressors, we handle the complete process: the teardown,
-            machining, motor rewinding, reassembly and run-testing. Every finished compressor is
-            tested, tagged and ready to return to service.
+            Bitzer and other heavy-duty compressors, we handle complete teardown, machining, motor
+            rewinding, reassembly and run-testing in-house. Every finished compressor is tested,
+            tagged and ready to return to service.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button render={<a href="#contact" />} nativeButton={false} size="lg">
