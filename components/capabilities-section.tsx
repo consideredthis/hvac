@@ -12,8 +12,8 @@ const BRANDS = [
 ]
 
 const SPECS = [
-  { label: "Compressor types", value: "Semi-hermetic reciprocating, electric & open-drive" },
-  { label: "Applications", value: "Reefer units, walk-in coolers & freezers" },
+  { label: "Compressor types", value: "Semi-hermetic & open-drive reciprocating compressors" },
+  { label: "Applications", value: "Commercial refrigeration · Building HVAC · Transit & transportation · Institutional & industrial cooling · Supermarkets & refrigeration racks" },
   { label: "Horsepower range", value: "1 HP – 60 HP" },
   { label: "Voltage", value: "115V – 575V, single & 3-phase" },
   { label: "Typical turnaround", value: "15–25 business days (current backlog)" },

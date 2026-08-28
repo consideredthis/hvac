@@ -15,23 +15,15 @@ const oswald = Oswald({
 })
 
 export const metadata: Metadata = {
-  title: 'Precision Hermetic Rebuilders | Semi-Hermetic Compressor Remanufacturing',
+  title: 'Precision Hermetic Rebuilders | Commercial & Industrial Compressor Remanufacturing',
   description:
-    'Precision Hermetic Rebuilders remanufactures semi-hermetic refrigeration and HVAC compressors to OEM specification. Full teardown, machining, motor rewind, and run-tested quality assurance.',
+    'Precision Hermetic Rebuilders remanufactures commercial and industrial reciprocating compressors in Calgary, Alberta. Full teardown, machining, motor rewinding, reassembly, and run-testing.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modern_favicon_precision_hermetic_rebuilders-hvpFdfdNAt6joruNSsjvpfhn1xrkN9.png',
+        type: 'image/png',
       },
     ],
     apple: '/apple-icon.png',

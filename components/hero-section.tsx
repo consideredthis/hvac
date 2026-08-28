@@ -6,7 +6,7 @@ const STATS = [
   { value: "Est. 1991", label: "Family-run in Calgary" },
   { value: "4K+", label: "Compressors remanufactured" },
   { value: "12 mo", label: "Standard warranty" },
-  { value: "100%", label: "Run-tested & certified" },
+  { value: "100%", label: "Run-tested" },
 ]
 
 export function HeroSection() {
@@ -16,16 +16,17 @@ export function HeroSection() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-sm border border-primary/40 bg-primary/10 px-3 py-1 font-mono text-xs uppercase tracking-widest text-primary">
             <ShieldCheck className="size-3.5" aria-hidden="true" />
-            OEM-Spec Remanufacturing
+            Compressor Remanufacturing · Calgary, AB
           </span>
           <h1 className="mt-6 text-balance font-heading text-4xl font-bold uppercase leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Semi-Hermetic Compressors, Rebuilt to Outlast the Original
           </h1>
           <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-steel-muted">
-            Precision Hermetic Rebuilders Inc. remanufactures semi-hermetic compressors for reefer
-            units and commercial walk-in coolers from the core up — complete teardown, precision
-            machining, motor rewinding, and full run-testing. Every unit ships certified and ready to
-            install.
+            Precision Hermetic Rebuilders Inc. remanufactures commercial and industrial reciprocating
+            compressors from the core up. From Carlyle 05G and 06E units to Copeland Discus, York,
+            Bitzer and other heavy-duty compressors, we handle the complete process: the teardown,
+            machining, motor rewinding, reassembly and run-testing. Every finished compressor is
+            tested, tagged and ready to return to service.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button render={<a href="#contact" />} nativeButton={false} size="lg">
@@ -46,7 +47,7 @@ export function HeroSection() {
 
         <div className="relative">
           <div className="absolute -inset-4 -z-0 rounded-sm bg-primary/10 blur-2xl" aria-hidden="true" />
-          <div className="relative overflow-hidden rounded-sm border border-steel-muted/20 bg-steel/40 p-2 shadow-2xl">
+          <div className="relative overflow-hidden rounded-sm bg-steel/40 p-2 shadow-2xl">
             <div className="relative aspect-square w-full overflow-hidden rounded-sm">
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modern_favicon_precision_hermetic_rebuilders-hvpFdfdNAt6joruNSsjvpfhn1xrkN9.png"
