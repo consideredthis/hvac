@@ -3,8 +3,8 @@ import { Award, Recycle, Clock, DollarSign } from "lucide-react"
 const REASONS = [
   {
     icon: Award,
-    title: "4,000+",
-    body: "Compressors rebuilt for commercial and industrial applications.",
+    title: "Calgary shop since 1991",
+    body: "Family-run and focused on commercial and industrial compressor rebuilding from our Calgary facility.",
   },
   {
     icon: DollarSign,

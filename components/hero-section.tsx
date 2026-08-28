@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 const STATS = [
   { value: "Est. 1991", label: "Family-run in Calgary" },
-  { value: "4K+", label: "Compressors remanufactured" },
+  { value: "4,000+", label: "Compressors rebuilt" },
   { value: "12 mo", label: "Standard warranty" },
   { value: "100%", label: "Run-tested" },
 ]
