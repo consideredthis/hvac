@@ -1,10 +1,19 @@
+import Image from "next/image"
+
 export function SiteFooter() {
   return (
     <footer className="border-t border-steel-muted/20 bg-steel py-10 text-steel-foreground">
       <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-6 px-4 md:flex-row md:items-center md:px-6">
         <div className="flex items-center gap-2.5">
-          <span className="flex size-8 items-center justify-center rounded-sm bg-primary text-primary-foreground">
-            <span className="font-heading text-lg font-bold leading-none">P</span>
+          <span className="relative size-9 shrink-0 overflow-hidden rounded-sm bg-primary">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modern_favicon_precision_hermetic_rebuilders-hvpFdfdNAt6joruNSsjvpfhn1xrkN9.png"
+              alt="Precision Hermetic Rebuilders compressor mark"
+              fill
+              sizes="36px"
+              quality={72}
+              className="object-contain"
+            />
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-heading text-sm font-bold uppercase tracking-wider">

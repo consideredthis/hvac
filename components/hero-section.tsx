@@ -1,6 +1,6 @@
+import Image from "next/image"
 import { ArrowRight, ShieldCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { PhotoPlaceholder } from "@/components/photo-placeholder"
 
 const STATS = [
   { value: "Est. 1991", label: "Family-run in Calgary" },
@@ -47,7 +47,17 @@ export function HeroSection() {
         <div className="relative">
           <div className="absolute -inset-4 -z-0 rounded-sm bg-primary/10 blur-2xl" aria-hidden="true" />
           <div className="relative overflow-hidden rounded-sm border border-steel-muted/20 bg-steel/40 p-2 shadow-2xl">
-            <PhotoPlaceholder tone="dark" label="Compressor photo" className="rounded-sm" />
+            <div className="relative aspect-square w-full overflow-hidden rounded-sm">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/modern_favicon_precision_hermetic_rebuilders-hvpFdfdNAt6joruNSsjvpfhn1xrkN9.png"
+                alt="Precision Hermetic Rebuilders compressor illustration"
+                fill
+                priority
+                sizes="(max-width: 1023px) 100vw, 50vw"
+                quality={72}
+                className="object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
