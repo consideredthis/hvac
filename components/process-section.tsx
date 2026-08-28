@@ -6,30 +6,30 @@ const STAGES = [
   {
     step: "01",
     title: "Intake & Inspection",
-    body: "Each incoming core is logged and inspected. We document the failure mode and confirm the unit is a viable rebuild candidate before any work begins — so you never pay to rebuild a compressor that should be replaced.",
+    body: "Each core is logged, inspected and assessed for rebuild viability before work begins.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20intake%20and%20inspection.JPG-nqe412TZTiZXYox8NdRWF1vlvLRgxg.jpeg",
   },
   {
     step: "02",
     title: "Teardown & Evaluation",
-    body: "The compressor is fully disassembled down to individual components. Every part is measured against OEM tolerances and sorted for cleaning, machining, or replacement.",
+    body: "The compressor is completely disassembled. Components are inspected, measured and identified for reuse, machining or replacement.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20teardown%20and%20evaluation.JPG-OmVsbRK1vnkCDViRUoyDxSmA6IHNXQ.jpeg",
   },
   {
     step: "03",
     title: "Machining & Cleaning",
-    body: "The entire compressor core is cleaned of rust, debris, and oil. Crankshafts are polished and cylinders are honed. Every component is chemically cleaned, inspected to engineering standards, and replaced if needed.",
+    body: "The core is thoroughly cleaned. Crankshafts are polished, cylinders honed and components restored or replaced as required.",
   },
   {
     step: "04",
     title: "Rewind & Reassembly",
-    body: "If required, electric motors are rewound with new magnetic wire and finished with industry-standard insulation epoxy varnish. New valves, gaskets, bearings, and seals are installed as the compressor is precisely reassembled.",
+    body: "Electric motors are rewound when required, then the compressor is reassembled with new wear components, seals and gaskets.",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Compressor%20rewind%20and%20reassembly.JPG-bBJfl6b0iPRRC5ZOivhj1IjoqNiFX6.jpeg",
   },
   {
     step: "05",
-    title: "Run Test & Certification",
-    body: "The finished unit is charged with oil, tested under load, and verified for pressures. Before dispatch it is evacuated and charged with dry nitrogen. It ships painted, tagged, and backed by our warranty.",
+    title: "Run Test",
+    body: "The finished compressor is charged with oil and run under load to verify operating pressures before evacuation, nitrogen charging and dispatch.",
   },
 ]
 
@@ -45,9 +45,7 @@ export function ProcessSection() {
             Five stages from failed core to tested unit
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            Every semi-hermetic compressor moves through the same disciplined remanufacturing line —
-            documented, measured, and run-tested at each step so you know exactly what you&apos;re
-            getting back.
+            Every compressor moves through a disciplined remanufacturing line — documented and measured at each step.
           </p>
         </div>
 

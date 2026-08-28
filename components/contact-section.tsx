@@ -49,8 +49,8 @@ async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
             Request a rebuild quote
           </h2>
           <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            Send us your compressor model and failure symptoms. We'll respond with pricing and a
-            turnaround estimate within one business day.
+            Send us the manufacturer, model number and nameplate information and we&apos;ll confirm
+            whether we can rebuild it. Include the application, symptoms and photos if available.
           </p>
 
           <ul className="mt-8 space-y-5">

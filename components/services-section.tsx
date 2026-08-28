@@ -4,32 +4,32 @@ const SERVICES = [
   {
     icon: Wrench,
     title: "Full Remanufacturing",
-    body: "Complete core-up rebuilds of semi-hermetic reciprocating compressors — both electric and open-drive — to original OEM tolerances.",
+    body: "Complete core-up compressor rebuilding, including teardown, inspection, machining, component replacement, reassembly and testing.",
   },
   {
     icon: Zap,
     title: "Motor Rewinding",
-    body: "In-house stator rewinding with new magnetic wire, coils rewound and finished with an industry-standard insulation epoxy varnish, plus full electrical testing on electric-drive units.",
+    body: "In-house stator rewinding with new magnet wire, insulation varnish and full electrical testing.",
   },
   {
     icon: Cog,
     title: "Precision Machining",
-    body: "Crankshaft polishing and cylinder honing using calibrated shop equipment.",
+    body: "Crankshaft polishing, cylinder honing and component restoration using calibrated shop equipment.",
   },
   {
     icon: Snowflake,
     title: "Commercial & Industrial Applications",
-    body: "From commercial refrigeration and building HVAC to transit, institutional and specialty cooling systems, we rebuild compressors across a wide range of demanding applications.",
+    body: "Compressors for refrigeration, HVAC, transit, institutional and industrial cooling applications.",
   },
   {
     icon: Gauge,
     title: "Run Testing",
-    body: "Every compressor is charged with oil, run under load, and verified for pressures, amperage, and oil integrity.",
+    body: "Every completed compressor is oil-charged and run under load to verify operating pressures.",
   },
   {
     icon: ClipboardCheck,
     title: "Failure Analysis",
-    body: "Root-cause teardown reports so you can correct system issues and prevent repeat failures.",
+    body: "Teardown inspection helps identify likely failure causes and prevent repeat system problems.",
   },
 ]
 
