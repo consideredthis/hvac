@@ -32,7 +32,6 @@ export async function POST(request: Request) {
       SMTP_PORT,
       SMTP_USER,
       SMTP_PASS,
-      CONTACT_RECIPIENT_EMAIL,
       CONTACT_FROM_EMAIL,
     } = process.env
 
@@ -41,7 +40,6 @@ export async function POST(request: Request) {
       !SMTP_PORT ||
       !SMTP_USER ||
       !SMTP_PASS ||
-      !CONTACT_RECIPIENT_EMAIL ||
       !CONTACT_FROM_EMAIL
     ) {
       console.error("Missing SMTP environment variables")
@@ -65,7 +63,7 @@ export async function POST(request: Request) {
 
     await transporter.sendMail({
       from: CONTACT_FROM_EMAIL,
-      to: CONTACT_RECIPIENT_EMAIL,
+      to: "precisionhermetic@telus.net",
       replyTo: email,
       subject: `Quote request: ${model} — ${company || name}`,
       text: `
